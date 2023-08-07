@@ -1,0 +1,16 @@
+<h1 class="h1-books">livros disponiveis</h1>
+    <div class="books-container">
+    {{#each books}}
+        <div>
+            #{{this.id}} 
+            - <span class="bold"><a href="/books/{{this.id}}">{{this.title}}</a></span> - 
+            {{this.pageqty}} páginas
+        </div>
+    {{/each}}
+</div>
+        <!-- Pop-up para mostrar a mensagem -->
+        <div class="popup" id="popup">
+            <p id="popup-message">{{message}}</p>
+        </div>
+        
+<a href="/" class="btn-add-book">Adicionar Novo Livro</a>

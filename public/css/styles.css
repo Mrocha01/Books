@@ -1,0 +1,169 @@
+/* Estilos para a barra de navegação (nav) */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo para o formulário de cadastro de livros */
+.form-container, .books-container {
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.form-container h1, .h1-books{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container .form-control {
+    margin-bottom: 20px;
+}
+
+.form-container .form-control label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-container .form-control input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para o rodapé */
+.footer-container {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo para o pop-up */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 999;
+}
+
+.popup p {
+    margin: 0;
+}
+
+.popup.active {
+    display: block;
+}
+
+
+/* BOOKS */
+
+.books-container div {
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Estilo para o botão de adicionar novo livro */
+.btn-add-book {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-add-book:hover {
+    background-color: #45a049;
+}
+
+#btn-books {
+    background-color: #2e6bb1;
+}
+
+#btn-books:hover {
+    background-color: #4376b1;
+}
+
+/* Estilo para o botão de remover livro */
+.btn-remove-book {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #ff0000; /* Cor vermelha para o botão */
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial, sans-serif; /* Mesma fonte usada nos outros botões */
+    font-weight: bold; /* Mesma fonte usada nos outros botões */
+}
+
+.btn-remove-book:hover {
+    background-color: #cc0000; /* Cor vermelha escura ao passar o mouse */
+}

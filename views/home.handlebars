@@ -1,0 +1,19 @@
+  <div class="form-container">
+        <h1>Cadastre o seu livro:</h1>
+        <form action="/books/insertbook" method="post">
+            <div class="form-control">
+                <label for="title">Título:</label>
+                <input type="text" name="title" placeholder="Digite o título">
+            </div>
+            <div class="form-control">
+                <label for="pageqty">Número de páginas:</label>
+                <input type="number" name="pageqty" placeholder="Quantas páginas o livro tem?">
+            </div>
+            <input type="submit" value="Cadastrar">
+            <a href="/books" class="btn-add-book" id="btn-books">Acessar Todos os Livros</a>
+        </form>
+        <!-- Pop-up para mostrar a mensagem -->
+        <div class="popup" id="popup">
+            <p id="popup-message">{{message}}</p>
+        </div>
+    </div>
